@@ -22,12 +22,14 @@ public class EmployeeController {
 	}
 	@GetMapping("/getAllEmployee")
 	public List<Employee> getAllEmployee(){
+		System.out.println("chages");
 		return new ArrayList<Employee>(employee.values());
 		
 	}
 	@PostMapping("/addEmployee")
 	public Employee addEmployee(@RequestBody Employee employ) {
 		employee.put(employ.getEmpId(), employ);
+
 		return employ;
 		
 	}
