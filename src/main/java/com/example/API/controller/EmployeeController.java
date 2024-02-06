@@ -21,8 +21,7 @@ public class EmployeeController {
 		return employee.get(id);
 	}
 	@GetMapping("/getAllEmployee")
-	public List<Employee> getAllEmployee(){
-		System.out.println("chages");
+	public List<Employee> getAllEmployees(){
 		return new ArrayList<Employee>(employee.values());
 		
 	}
